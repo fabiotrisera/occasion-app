@@ -23,6 +23,18 @@ module.exports = function(defaults) {
   //bootstrap
   app.import("bower_components/bootstrap/dist/js/bootstrap.js");
   app.import("bower_components/bootstrap/dist/css/bootstrap.css");
+  
+  //font-awesome
+  app.import("bower_components/font-awesome/css/font-awesome.css");
+  app.import("bower_components/font-awesome/fonts/fontawesome-webfont.woff", {
+    destDir: "fonts"
+  });
+  app.import("bower_components/font-awesome/fonts/fontawesome-webfont.woff2", {
+    destDir: "fonts"
+  });
+  app.import("bower_components/font-awesome/fonts/fontawesome-webfont.ttf", {
+    destDir: "fonts"
+  });
 
   return app.toTree();
 };
